@@ -64,10 +64,10 @@
 
         default_layer {
             //label = "COLEMAK";
-            label = "<- /\ \/ ->";
-            //label = "</>";
+            //label = "<- ->";
+            //label = "!@#";
             //label = "123";
-            //label = "F1 - F12";
+            label = "F1 - F12";
             //label = "GAME";
             //label = "ALT GAME";
 
