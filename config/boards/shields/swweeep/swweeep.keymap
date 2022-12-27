@@ -63,7 +63,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            label = "→";
+            label = "\u2713";
 
             bindings = <
     &kp Q        &kp W        &kp F       &kp P         &kp B                                       &kp J         &kp L        &lt WINNAV U  &kp Y       &kp SEMI
