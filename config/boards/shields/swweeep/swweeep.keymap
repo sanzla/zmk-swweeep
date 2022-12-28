@@ -64,7 +64,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            label = LV_SYMBOL_LEFT;
+            label = "\xEF\x81\x93 \xEF\x81\xB8 \xEF\x81\xB7 \xEF\x81\x94";
 
             bindings = <
     &kp Q        &kp W        &kp F       &kp P         &kp B                                       &kp J         &kp L        &lt WINNAV U  &kp Y       &kp SEMI
