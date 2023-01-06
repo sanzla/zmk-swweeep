@@ -8,7 +8,8 @@
 #define SYM     2
 #define FUNC    3
 #define MEDIA   4
-#define WINNAV  5
+#define MOUSE   5
+#define WINNAV  6
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS>;
@@ -56,33 +57,24 @@
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
-        ht: hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP";
-            #binding-cells = <2>;
-            tapping-term-ms = <100>;
-            quick_tap_ms = <0>;
-            flavor = "balanced";
-            bindings = <&kp>, <&kp>;
-        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
-            label = "COLEMAK";
+            label = "Default";
 
             bindings = <
     &kp Q        &kp W        &kp F       &kp P         &kp B                                       &kp J         &kp L        &lt WINNAV U  &kp Y       &kp SEMI
-    &hm LCTL A   &hm LGUI R   &hm LALT S  &hs LSHIFT T  &kp G                                       &kp M         &hs RSHIFT N &hm LALT E    &hm RGUI I  &hm RCTL O
-    &kp Z        &kp X        &kp C       &kp D         &kp V                                       &kp K         &kp H        &kp COMMA     &kp EXCL DOT &ht QMARK FSLH
+    &hm LCTL A   &hm LGUI R   &hm LALT S  &hs LSHIFT T  &kp G                                       &lt MOUSE M   &hs RSHIFT N &hm RALT E    &hm RGUI I  &hm RCTL O
+    &kp Z        &kp X        &kp C       &kp D         &kp V                                       &kp K         &kp H        &kp COMMA     &kp DOT     &kp FSLH
                                           &kp DEL       &lt NAV RET  &lt FUNC TAB  &lt MEDIA BSPC   &lt SYM SPACE &kp SQT
             >;
         };
 
         nav_layer {
-            label = "\xEF\x81\x93 \xEF\x81\xB8 \xEF\x81\xB7 \xEF\x81\x94"; // LEFT DOWN UP LEFT 
+            label = "Navigation";
 
             bindings = <
     &kp ESC      &kp PG_UP    &kp UP      &kp PG_DN     &trans                                      &kp ASTRK     &kp N7       &kp N8        &kp N9      &kp MINUS
@@ -93,7 +85,7 @@
         };
 
         sym_layer {
-            label = "!@#$%^";
+            label = "Symbols";
 
             bindings = <
     &kp EXCL     &kp AT       &kp HASH        &kp DLLR         &kp PRCNT                                   &kp CARET     &kp AMPS          &kp ASTRK     &kp UNDER   &kp EQUAL
@@ -104,7 +96,7 @@
         };
 
         func_layer {
-            label = "F1 - F12";
+            label = "Function";
 
             bindings = <
     &bootloader  &kp LS(PG_UP) &kp LS(UP)   &kp LS(PG_DN) &trans                                         &kp C_MUTE       &kp F7       &kp F8        &kp F9      &kp F10
@@ -115,13 +107,24 @@
         };
 
         media_layer {
-            label = "\xEF\x80\x81"; // audio symbol
+            label = "Media";
 
             bindings = <
     &trans       &trans       &trans        &trans            &trans                                      &trans             &bt BT_PRV        &bt BT_NXT         &trans         &trans
     &trans       &trans       &trans        &trans            &trans                                      &trans             &trans            &trans             &trans         &trans
     &trans       &trans       &trans        &trans            &trans                                      &bt BT_CLR         &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2   &bt BT_SEL 3
                                             &trans            &trans        &trans         &trans         &out OUT_BLE       &out OUT_USB
+            >;
+        };
+
+        mouse_layer {
+            label = "Mouse";
+
+            bindings = <
+    &bootloader &trans      &trans      &trans      &trans                                           &trans      &trans      &trans      &trans      &trans
+    &trans      &trans      &trans      &trans      &trans                                           &trans      &trans      &trans      &trans      &trans
+    &trans      &trans      &trans      &trans      &trans                                           &trans      &trans      &trans      &trans      &trans
+                                        &trans      &trans          &trans           &trans          &trans      &trans
             >;
         };
 
