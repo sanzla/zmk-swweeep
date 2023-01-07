@@ -36,12 +36,12 @@
         };
         combo_bt_left {
             timeout-ms = <50>;
-            key-positions = <31 32 33>;
+            key-positions = <30 31 32>;
             bindings = <&tog BT>;
         };
         combo_bt_right {
             timeout-ms = <50>;
-            key-positions = <34 35 36>;
+            key-positions = <33 34 35>;
             bindings = <&tog BT>;
         };
         
