@@ -13,5 +13,5 @@ endif
 
 if SHIELD_SWWEEEP_LEFT || SHIELD_SWWEEEP_RIGHT
 config ZMK_SPLIT
-    default y"'
+    default y
 endif
