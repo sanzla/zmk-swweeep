@@ -9,8 +9,7 @@
 #define FUNC    3
 #define GAMING  4
 #define GFUNC   5
-#define WINNAV  6
-#define BT      7
+#define BT      6
 
 
 
@@ -90,7 +89,7 @@
 
             bindings = <
     &kp Q        &kp W        &kp F       &kp P         &kp B                                       &kp J         &kp L        &lt WINNAV U  &kp Y        &ht UNDER MINUS
-    &hm LCTL A   &hm LGUI R   &hm LALT S  &hs LSHIFT T  &kp G                                       &kp M         &hs RSHIFT N &hm RALT E    &hm RGUI I   &hm RCTL O
+    &hm LCTL A   &hm LGUI R   &hm LALT S  &hs LSHIFT T  &kp G                                       &kp M         &hs RSHIFT N &hm LALT E    &hm RGUI I   &hm RCTL O
     &kp Z        &kp X        &kp C       &kp D         &kp V                                       &kp K         &kp H        &ht SQT COMMA &ht EXCL DOT &ht QMARK FSLH
                                           &kp DEL       &lt NAV RET  &lt FUNC TAB  &lt MEDIA BSPC   &lt SYM SPACE &ht COLON SEMI
             >;
@@ -149,17 +148,6 @@
     &trans       &kp 1       &kp 2        &kp 3            &kp 4                                      &trans       &trans       &trans       &trans         &trans
     &kp LALT     &kp 5       &kp 6        &kp 7            &kp 8                                      &trans       &trans       &trans       &trans         &trans
                                             &trans            &trans        &trans         &trans         &trans       &trans 
-            >;
-        };
-
-        winnav_layer {
-            label = "Win Navigation";
-
-            bindings = <
-    &trans       &trans       &kp LG(UP)   &trans        &trans                                      &trans      &trans      &trans      &trans      &trans
-    &trans       &kp LG(LEFT) &kp LG(DOWN) &kp LG(RIGHT) &trans                                      &trans      &trans      &trans      &trans      &trans
-    &trans       &trans       &trans       &trans        &trans                                      &trans      &trans      &trans      &trans      &trans
-                                           &trans        &trans        &trans         &trans         &trans      &trans
             >;
         };
 
