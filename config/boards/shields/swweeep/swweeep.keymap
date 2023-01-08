@@ -42,8 +42,8 @@
         };
         combo_gaming_mode {
             timeout-ms = <50>;
-            key-positions = <0 1 2>;
-            bindings = <&tog GFUNC>;
+            key-positions = <0 1 2 3>;
+            bindings = <&tog GAMING>;
         };
         
     };
