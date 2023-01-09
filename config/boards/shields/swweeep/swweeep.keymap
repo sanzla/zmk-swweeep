@@ -167,8 +167,8 @@
             label = "Win Nav";
 
             bindings = <
-    &kp LC(Q)            &kp LC(LG(LEFT))      &LC(LA(UP))   &kp LC(LG(RIGHT))     &kp LC(LA(F))                               &kp LC(LS(N3))  &kp LC(LS(N4)) &trans       &trans         &trans
-    &kp LC(LA(LG(LEFT))) &kp LC(LA(LEFT))      &LC(LA(DOWN)) &kp LC(LA(RIGHT))     &kp LC(LA(LG(RIGHT)))                       &trans          &trans         &trans       &trans         &trans
+    &kp LC(Q)            &kp LC(LG(LEFT))      &kp LC(LA(UP))   &kp LC(LG(RIGHT))     &kp LC(LA(F))                               &kp LC(LS(N3))  &kp LC(LS(N4)) &trans       &trans         &trans
+    &kp LC(LA(LG(LEFT))) &kp LC(LA(LEFT))      &kp LC(LA(DOWN)) &kp LC(LA(RIGHT))     &kp LC(LA(LG(RIGHT)))                       &trans          &trans         &trans       &trans         &trans
     &trans               &kp LC(LG(LS(LEFT)))  &trans        &kp LC(LG(LS(RIGHT))) &kp LC(M)                                   &trans          &trans         &trans       &trans         &trans
                                                                       &trans            &trans        &trans         &trans         &trans       &trans 
             >;
