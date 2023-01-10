@@ -15,7 +15,7 @@ config LS0XX
 	default y
 
 config ZMK_WIDGET_WPM_STATUS
-	default y if !ZMK_SPLIT || ZMK_SPLIT_ROLE_CENTRAL
+	default y
 
 config LVGL_BITS_PER_PIXEL
 	default 1
