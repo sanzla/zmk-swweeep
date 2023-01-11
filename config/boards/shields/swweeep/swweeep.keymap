@@ -59,7 +59,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick_tap_ms = <0>;
-            flavor = "tap-preferred";
+            flavor = "tap-unless-interrupted";
             bindings = <&kp>, <&kp>;
         };
         hs: homerow_shift {
@@ -68,16 +68,16 @@
             #binding-cells = <2>;
             tapping-term-ms = <175>;
             quick_tap_ms = <0>;
-            flavor = "tap-preferred";
+            flavor = "tap-unless-interrupted";
             bindings = <&kp>, <&kp>;
         };
-        ht: homerow_shift {
+        ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP";
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             quick_tap_ms = <0>;
-            flavor = "tap-preferred";
+            flavor = "tap-unless-interrupted";
             bindings = <&kp>, <&kp>;
         };
     };
