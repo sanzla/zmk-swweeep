@@ -26,19 +26,14 @@
             key-positions = <20 21>;
             bindings = <&kp LC(Z)>;
         };
-        combo_semicolon {
+        combo_redo {
             timeout-ms = <50>;
-            key-positions = <27 28>;
-            bindings = <&kp SEMI>;
+            key-positions = <21 22>;
+            bindings = <&kp LC(Y)>;
         };
         combo_bt_left {
             timeout-ms = <50>;
             key-positions = <30 31 32>;
-            bindings = <&tog BT>;
-        };
-        combo_bt_right {
-            timeout-ms = <50>;
-            key-positions = <33 34 35>;
             bindings = <&tog BT>;
         };
         combo_gaming_mode {
@@ -71,15 +66,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-        ht: homerow_shift {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
     };
 
     keymap {
@@ -89,10 +75,10 @@
             label = "Default";
 
             bindings = <
-    &kp Q        &kp W        &kp F       &kp P         &kp B                                       &kp J         &kp L        &lt WINNAV U         &kp Y        &ht UNDER MINUS
+    &kp Q        &kp W        &kp F       &kp P         &kp B                                       &kp J         &kp L        &lt WINNAV U         &kp Y        &hs UNDER MINUS
     &hm LCTL A   &hm LGUI R   &hm LALT S  &hs LSHIFT T  &kp G                                       &kp M         &hs RSHIFT N &hm LALT E    &hm RGUI I   &hm RCTL O
-    &kp Z        &kp X        &kp C       &kp D         &kp V                                       &kp K         &kp H        &ht SQT COMMA &ht EXCL DOT &ht QMARK FSLH
-                                        &kp DEL       &lt NAV RET  &lt FUNC TAB  &kp BSPC   &lt SYM SPACE &ht COLON SEMI
+    &kp Z        &kp X        &kp C       &kp D         &kp V                                       &kp K         &kp H        &hs SQT COMMA &hs EXCL DOT &hs QMARK FSLH
+                                        &kp DEL       &lt NAV RET  &lt FUNC TAB  &kp BSPC   &lt SYM SPACE &hs COLON SEMI
             >;
         };
 
@@ -137,7 +123,7 @@
     &kp TAB       &kp Q       &kp W        &kp E            &kp R                          &kp C_MUTE       &kp C_PREV   &kp C_PP     &kp C_NEXT     &trans
     &kp LSHFT     &kp A       &kp S        &kp D            &kp F                          &kp C_VOL_UP     &trans       &trans       &trans         &trans
     &kp LCTRL     &kp Z       &kp X        &kp C            &kp V                          &kp C_VOL_DN     &trans       &trans       &trans         &trans
-                                 &kp B            &lt GFUNC SPACE        &kp CAPS       &trans         &trans       &trans 
+                                 &kp LALT    &lt GFUNC SPACE        &kp CAPS       &trans         &trans       &trans 
             >;
         };
 
@@ -147,7 +133,7 @@
             bindings = <
     &kp ESC      &kp F1      &kp F2       &kp F3           &kp F4                                     &trans       &trans       &trans       &trans         &trans
     &trans       &kp 1       &kp 2        &kp 3            &kp 4                                      &trans       &trans       &trans       &trans         &trans
-    &kp LALT     &kp 5       &kp 6        &kp 7            &kp 8                                      &trans       &trans       &trans       &trans         &trans
+    &kp B        &kp 5       &kp 6        &kp 7            &kp 8                                      &trans       &trans       &trans       &trans         &trans
                                             &trans            &trans        &trans         &trans         &trans       &trans 
             >;
         };
