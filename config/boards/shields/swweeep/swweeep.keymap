@@ -76,10 +76,10 @@
             label = "Default";
 
             bindings = <
-    &kp Q        &kp W        &kp F       &kp P         &kp B                                       &kp J         &kp L        &lt WINNAV U  &kp Y       &kp SEMI
-    &hm LCTL A   &hm LGUI R   &hm LALT S  &hs LSHIFT T  &kp G                                       &lt M         &hs RSHIFT N &hm RALT E    &hm RGUI I  &hm RCTL O
-    &kp Z        &kp X        &kp C       &kp D         &kp V                                       &kp K         &kp H        &kp COMMA     &kp DOT     &kp FSLH
-                                          &kp DEL       &lt NAV RET  &lt FUNC TAB  &lt MEDIA BSPC   &lt SYM SPACE &kp SQT
+    &kp Q        &kp W        &kp F       &kp P         &kp B                                       &kp J         &kp L        &lt WINNAV U         &kp Y        &hs UNDER MINUS
+    &hm LCTL A   &hm LGUI R   &hm LALT S  &hs LSHIFT T  &kp G                                       &kp M         &hs RSHIFT N &hm LALT E    &hm RGUI I   &hm RCTL O
+    &kp Z        &kp X        &kp C       &kp D         &kp V                                       &kp K         &kp H        &hs SQT COMMA &hs EXCL DOT &hs QMARK FSLH
+                                        &kp DEL       &lt NAV RET  &lt FUNC TAB  &kp BSPC   &lt SYM SPACE &hs COLON SEMI
             >;
         };
 
