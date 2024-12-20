@@ -13,6 +13,7 @@
 #define GFUNC   5
 #define BT      6
 #define WINNAV  7
+#define MOUSE   8
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
@@ -79,7 +80,7 @@
             label = "Default";
 
             bindings = <
-    &kp Q        &kp W        &lt WINNAV F &kp P         &kp B                                       &kp J         &kp L        &lt WINNAV U         &kp Y        &hs UNDER MINUS
+    &kp Q        &kp W        &lt MOUSE F &kp P         &kp B                                       &kp J         &kp L        &lt WINNAV U         &kp Y        &hs UNDER MINUS
     &hm LCTL A   &hm LGUI R   &hm LALT S   &hs LSHIFT T  &kp G                                       &kp M         &hs RSHIFT N &hm LALT E    &hm RGUI I   &hm RCTL O
     &kp Z        &kp X        &kp C        &kp D         &kp V                                       &kp K         &kp H        &hs SQT COMMA &hs EXCL DOT &hs QMARK FSLH
                                         &kp DEL       &lt NAV RET  &lt FUNC TAB  &kp BSPC   &lt SYM SPACE &hs COLON SEMI
@@ -164,7 +165,7 @@
             >;
         };
 
-        moure_layer{
+        mouse_layer{
             label = "Mouse";
 
             bindings = <
